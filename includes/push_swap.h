@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anovikav <anovikav@student.42.fr>          +#+  +:+       +#+        */
+/*   By: matcha <matcha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/30 11:27:25 by anovikav          #+#    #+#             */
-/*   Updated: 2022/10/23 07:16:45 by anovikav         ###   ########.fr       */
+/*   Updated: 2022/11/22 14:28:48 by matcha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ typedef struct s_stack
 }				t_stack;
 
 t_stack	init_stack(char **input, int len, int size_max, char name);
+void	display_stack(t_stack *a, t_stack *b);
 
 void	swap(t_stack *stack);
 void	rotate(t_stack *stack);

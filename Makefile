@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: anovikav <anovikav@student.42.fr>          +#+  +:+       +#+         #
+#    By: matcha <matcha@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/30 10:21:07 by anovikav          #+#    #+#              #
-#    Updated: 2022/10/23 02:34:26 by anovikav         ###   ########.fr        #
+#    Updated: 2022/11/22 14:28:43 by matcha           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,6 +35,7 @@ SRCS_NAME =	push_swap.c			\
 			ft_raddix.c			\
 			check_error.c		\
 			check_order.c		\
+			display.c			\
 
 
 # ********************************DIRECTORIES********************************* #

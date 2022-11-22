@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anovikav <anovikav@student.42.fr>          +#+  +:+       +#+        */
+/*   By: matcha <matcha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 11:55:34 by anovikav          #+#    #+#             */
-/*   Updated: 2022/10/23 06:45:23 by anovikav         ###   ########.fr       */
+/*   Updated: 2022/11/22 14:29:42 by matcha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,7 @@ static void	choose_sort(t_stack *a, t_stack *b)
 		else
 			ft_raddix(a, b);
 	}
+	display_stack(a, b);
 	free_all(a, b);
 }
 

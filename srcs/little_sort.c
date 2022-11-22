@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   little_sort.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anovikav <anovikav@student.42.fr>          +#+  +:+       +#+        */
+/*   By: matcha <matcha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 07:05:26 by anovikav          #+#    #+#             */
-/*   Updated: 2022/10/02 12:37:16 by anovikav         ###   ########.fr       */
+/*   Updated: 2022/11/22 20:09:25 by matcha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,8 @@ void	three_sort(t_stack *stack)
 /*----------------------------------------------------------------------------*/
 static void	refill_stack_a(t_stack *a, t_stack *b, int lengh)
 {
+	if ((a->size == 3) & (b->index[0] == lengh))
+		push(a, b);
 	if (a->index[0] == 0 && b->index[0] == lengh)
 	{
 		push(a, b);
