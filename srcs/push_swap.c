@@ -6,7 +6,7 @@
 /*   By: matcha <matcha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 11:55:34 by anovikav          #+#    #+#             */
-/*   Updated: 2022/11/22 14:29:42 by matcha           ###   ########.fr       */
+/*   Updated: 2022/11/22 21:04:48 by matcha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ static void	choose_sort(t_stack *a, t_stack *b)
 			swap(a);
 		else if (a->size == 3)
 			three_sort(a);
-		else if (a->size == 5)
+		else if (a->size <= 5)
 			five_sort(a, b);
 		else
 			ft_raddix(a, b);
