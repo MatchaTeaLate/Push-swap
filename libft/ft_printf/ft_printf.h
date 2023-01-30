@@ -6,7 +6,7 @@
 /*   By: anovikav <anovikav@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/16 13:45:13 by anovikav          #+#    #+#             */
-/*   Updated: 2022/05/30 11:15:50 by anovikav         ###   ########.fr       */
+/*   Updated: 2023/01/31 00:31:33 by anovikav         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int		printf_x(unsigned int nb, char c);
 int		ft_printf(const char *str, ...);
 int		printf_u(unsigned int n);
 int		printf_p(void *ptr);
-int		printf_s(char *str);
+int		printf_s(char *str);cd .
 int		printf_id(int nb);
 int		printf_c(int a);
 

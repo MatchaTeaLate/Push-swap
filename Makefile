@@ -3,16 +3,16 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: matcha <matcha@student.42.fr>              +#+  +:+       +#+         #
+#    By: anovikav <anovikav@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/30 10:21:07 by anovikav          #+#    #+#              #
-#    Updated: 2022/11/22 14:28:43 by matcha           ###   ########.fr        #
+#    Updated: 2023/01/30 10:51:57 by anovikav         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = push_swap
 
-CC = clang
+CC = cc
 
 CFLAGS = -Wall -Wextra -Werror -I $(LIBFT_DIR) -I $(HEADER_DIR) -I ./ -g3
 
@@ -35,7 +35,7 @@ SRCS_NAME =	push_swap.c			\
 			ft_raddix.c			\
 			check_error.c		\
 			check_order.c		\
-			display.c			\
+			medium_sort.c		\
 
 
 # ********************************DIRECTORIES********************************* #

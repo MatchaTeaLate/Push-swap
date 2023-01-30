@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: matcha <matcha@student.42.fr>              +#+  +:+       +#+        */
+/*   By: anovikav <anovikav@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 11:55:34 by anovikav          #+#    #+#             */
-/*   Updated: 2022/11/22 21:04:48 by matcha           ###   ########.fr       */
+/*   Updated: 2023/01/30 22:16:32 by anovikav         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,11 @@ static int	max_size(char *str)
 	int	len;
 
 	i = 0;
-	if (str[i] != '\0')
-		len = 1;
-	else
-		len = 0;
-	while (str[i] != '\0')
+	len = 0;
+	while (str[i] != 0)
 	{
-		if (str[i - 1] == ' ')
-			len ++;
+		if (ft_isprint(str[i]) && str[i] != ' ')
+			len++;
 		i++;
 	}
 	return (len);
@@ -33,7 +30,7 @@ static int	max_size(char *str)
 
 static void	choose_sort(t_stack *a, t_stack *b)
 {
-	if (check_order(a) == FAIL)
+	if (check_order(a) == FAIL && a->size > 1)
 	{
 		if (a->size == 2 && check_order(a) == FAIL)
 			swap(a);
@@ -44,7 +41,6 @@ static void	choose_sort(t_stack *a, t_stack *b)
 		else
 			ft_raddix(a, b);
 	}
-	display_stack(a, b);
 	free_all(a, b);
 }
 
