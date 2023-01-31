@@ -6,7 +6,7 @@
 /*   By: anovikav <anovikav@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 11:55:34 by anovikav          #+#    #+#             */
-/*   Updated: 2023/01/31 01:02:10 by anovikav         ###   ########.fr       */
+/*   Updated: 2023/01/31 01:07:34 by anovikav         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,8 @@ static int	max_size(char *str)
 				i++;
 		}
 	}
-	ft_printf("len = %d\n", len);
+	if (len == 0)
+		exit (EXIT_FAILURE);
 	return (len);
 }
 
