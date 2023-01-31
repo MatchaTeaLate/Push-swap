@@ -6,7 +6,7 @@
 /*   By: anovikav <anovikav@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 22:18:24 by anovikav          #+#    #+#             */
-/*   Updated: 2023/01/31 01:55:49 by anovikav         ###   ########.fr       */
+/*   Updated: 2023/01/31 02:21:34 by anovikav         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static int	str_is_digit(char *str)
 	i = 0;
 	if (str[i] == 0)
 		return (FAIL);
-	if (str[i] == '-')
+	if (str[i] == '-' || str[i] == '+')
 	{
 		if (ft_isdigit(str[i + 1]))
 			i++;
