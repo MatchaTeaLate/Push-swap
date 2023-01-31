@@ -6,7 +6,7 @@
 /*   By: anovikav <anovikav@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 11:55:34 by anovikav          #+#    #+#             */
-/*   Updated: 2023/01/30 22:16:32 by anovikav         ###   ########.fr       */
+/*   Updated: 2023/01/31 01:02:10 by anovikav         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,16 @@ static int	max_size(char *str)
 	len = 0;
 	while (str[i] != 0)
 	{
-		if (ft_isprint(str[i]) && str[i] != ' ')
+		if (str[i] == ' ')
+			i++;
+		else if (ft_isprint(str[i]) == 1 && str[i] != ' ')
+		{
 			len++;
-		i++;
+			while (ft_isprint(str[i]) == 1 && str[i] != ' ')
+				i++;
+		}
 	}
+	ft_printf("len = %d\n", len);
 	return (len);
 }
 
